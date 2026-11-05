@@ -17,8 +17,18 @@
 - **¿Cuál es su versión actual?**  
   La versión actual es TypeScript 7 (lanzada en julio de 2026).
 
----
+## Tema 2: Crear y ejecutar un proyecto
 
-### Fuentes consultadas
+- **¿Cómo se instala TypeScript en un proyecto?**  
+  Se instala localmente como dependencia de desarrollo ejecutando `npm i -D typescript`[cite: 9, 10]. También se suelen incluir `@types/node` y `tsx` para desarrollo.
 
-- _Guía Teórica-Práctica Unidad 4: Introducción a TypeScript_, Instituto Politécnico Formosa.
+- **¿Para qué sirve el archivo tsconfig.json?**  
+  Es el archivo de configuración del proyecto[cite: 12]. Le indica a TypeScript qué archivos forman el proyecto (`include`), qué tan estricto debe ser al verificar tipos (`strict`) y cómo generar el JavaScript (`target`, `module`, `outDir`).
+
+- **¿Qué hace el comando tsc?**  
+  Es el compilador oficial (`TypeScript Compiler`)[cite: 6]. Analiza el proyecto, verifica los tipos de todo el código y genera los archivos `.js` compilados en la carpeta de salida (por ejemplo, `dist/`).
+
+- **¿Qué diferencia hay entre ejecutar un archivo con tsc, tsx y node?**
+  - **`tsc`**: Verifica tipos y genera los archivos JavaScript compilados (no ejecuta directamente el código).
+  - **`tsx`**: Ejecuta directamente el código `.ts` al vuelo para desarrollo rápido sin compilar ni verificar tipos.
+  - **`node`**: Ejecuta el JavaScript compilado resultante (o quita las anotaciones de tipo sin verificar en versiones recientes).

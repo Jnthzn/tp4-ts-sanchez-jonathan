@@ -46,3 +46,17 @@
 
 - **¿Por qué se recomienda evitar any?**  
   Se recomienda evitarlo porque desactiva por completo la verificación de tipos de TypeScript. Esto permite operaciones inválidas en compilación que luego fallan al ejecutarse. En su lugar se prefiere usar `unknown`.
+
+## Tema 4: Funciones
+
+- **¿Cómo se indican los tipos de los parámetros?**  
+  Se especifican agregando `:` y el tipo de dato inmediatamente después del nombre del parámetro (por ejemplo: `nombre: string, edad: number`).
+
+- **¿Cómo se indica el tipo de retorno?**  
+  Se indica colocando `:` y el tipo de dato después del paréntesis de los parámetros y antes de la apertura de llaves (por ejemplo: `function sumar(): number`). Si no retorna ningún valor, se usa el tipo `void`.
+
+- **¿Qué es un parámetro opcional?**  
+  Es un parámetro que puede o no ser enviado al llamar a la función. Se declara agregando un signo `?` después de su nombre (por ejemplo: `apellido?: string`). Dentro de la función su tipo incluye `undefined`.
+
+- **¿Qué es un parámetro por defecto?**  
+  Es un parámetro al cual se le asigna un valor inicial con el operador `=` (por ejemplo: `rol: string = "USER"`). Si no se pasa un argumento al invocar la función, tomará ese valor por defecto.

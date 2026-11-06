@@ -32,3 +32,17 @@
   - **`tsc`**: Verifica tipos y genera los archivos JavaScript compilados (no ejecuta directamente el código).
   - **`tsx`**: Ejecuta directamente el código `.ts` al vuelo para desarrollo rápido sin compilar ni verificar tipos.
   - **`node`**: Ejecuta el JavaScript compilado resultante (o quita las anotaciones de tipo sin verificar en versiones recientes).
+
+## Tema 3: Tipos básicos
+
+- **¿Qué son los tipos string, number y boolean?**  
+  Son los tipos de datos primitivos en TypeScript: `string` representa texto, `number` representa valores numéricos (enteros y decimales) y `boolean` representa valores lógicos (`true` o `false`).
+
+- **¿Cómo se declara un array con tipo?**  
+  Se declara especificando el tipo de elementos seguido de corchetes, por ejemplo: `let numeros: number[] = [1, 2, 3]` o `let nombres: string[] = ["Ana", "Luis"]`.
+
+- **¿Qué es un tipo unión?**  
+  Un tipo unión permite que una variable pueda contener más de un tipo de dato, combinándolos con el operador `|` (por ejemplo: `string | number`).
+
+- **¿Por qué se recomienda evitar any?**  
+  Se recomienda evitarlo porque desactiva por completo la verificación de tipos de TypeScript. Esto permite operaciones inválidas en compilación que luego fallan al ejecutarse. En su lugar se prefiere usar `unknown`.

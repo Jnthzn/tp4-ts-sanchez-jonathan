@@ -60,3 +60,17 @@
 
 - **¿Qué es un parámetro por defecto?**  
   Es un parámetro al cual se le asigna un valor inicial con el operador `=` (por ejemplo: `rol: string = "USER"`). Si no se pasa un argumento al invocar la función, tomará ese valor por defecto.
+
+## Tema 5: Interfaces y type
+
+- **¿Qué es una interfaz y para qué sirve?**  
+  Una interfaz es una estructura que describe la forma de un objeto, especificando el nombre y tipo de sus propiedades o métodos. Sirve para definir contratos de forma en los datos y se utiliza habitualmente cuando se necesita herencia mediante `extends`.
+
+- **¿Qué es un type?**  
+  Un `type` (alias de tipo) es una declaración que permite asignar un nombre personalizado a cualquier tipo de dato. Puede representarse sobre primitivos, objetos, uniones o intersecciones.
+
+- **¿Cómo se declara una propiedad opcional?**  
+  Se declara colocando un signo de interrogación `?` justo después del nombre de la propiedad (por ejemplo, `edad?: number`).
+
+- **¿Cuándo conviene usar cada uno?**  
+  Conviene usar `interface` para estructuras de objetos y clases, sobre todo al requerir extensión (`extends`). Conviene usar `type` para uniones (`|`), intersecciones (`&`), tipos literales o alias de primitivos.
